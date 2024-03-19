@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+nav{
+      width: 100%;
+      height: 11vh;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.375);
+      z-index: 1;
+      position: fixed;
+     
+}
+nav img{
+    position: absolute;
+   
+    left: 10%;
+}
+nav ul{
+    float: right;
+    margin-right: 397px;
+    display: flex;
+   
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0px 43px;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
+nav ul li a{
+    position: absolute;
+    
+    color: rgb(71, 66, 66);
+    text-decoration: none;
+    
+    
+}
+nav ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 20px;
+    height: 3px;
+    width: 100%;
+    background: blue;
+    color: blue;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+nav ul li a:hover{
+    color: blue;
+}
+nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.auth{
+   
+   position: relative;
+    display: flex;
+    margin-left: 1300px;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+.auth p{
+    margin-top: 31px;
+    font-family: 'Times New Roman';
+}
+.auth p a{
+    text-decoration: none;
+    color: rgb(71, 66, 66);
+
+}
+.auth p a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 10px;
+    height: 3px;
+    width: 100%;
+    background: blue;
+    color: blue;
+    transform: scaleX(0);
+    transform-origin: right;
+    
+}
+.auth p a:hover{
+    color: blue;
+}
+.auth p a:hover:before{
+    transform: scaleX(0.2);
+    transform-origin: left;
+}
+.auth .signupbtn{
+    margin-top: 20px;
+}
+.auth button{
+   
+    height: 35px;
+    width: 90px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    font-size: 15px;
+    margin: 0px 22px;
+    display: flex;
+    border-radius: 4px;
+    background: blue;
+    color: #fff;
+   
+    
+    cursor: pointer;
+    transition: background 1s;
+   border: 0;
+    
+}
+.auth button a{
+    text-decoration: none;
+    color: #fff;
+}
